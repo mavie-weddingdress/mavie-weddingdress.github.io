@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mavie｜ウェディングドレス｜滋賀県大津市</title>
+<meta name="description" content="mavie（マヴィ）は滋賀県大津市のウェディングドレスブランド。あなたの持つ美しさにそっと光をあてる、あなたのための一着を、レンタル・セミオーダーで。">
+<meta property="og:title" content="mavie｜ウェディングドレス">
+<meta property="og:description" content="あなたの持っている美しさや可愛らしさにそっと光をあてる、あなたのためのWedding dress。滋賀県大津市。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Shippori+Mincho:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbfaf7;
+    --bg-2:#f3f0ea;
+    --ink:#3c3a36;
+    --ink-soft:#8b877e;
+    --line:#e6e1d7;
+    --accent:#9a9384;
+    --white:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Zen Kaku Gothic New",-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    font-weight:300;
+    line-height:2;
+    letter-spacing:.04em;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  .serif{font-family:"Cormorant Garamond",serif;}
+  .mincho{font-family:"Shippori Mincho",serif;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 28px;}
+  .en-label{font-family:"Cormorant Garamond",serif;font-size:13px;letter-spacing:.45em;color:var(--accent);text-transform:uppercase;}
+
+  /* header */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:60;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:20px 36px;
+    background:rgba(251,250,247,.82);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(230,225,215,.6);
+  }
+  .brand{font-family:"Cormorant Garamond",serif;font-size:25px;letter-spacing:.42em;padding-left:.42em;}
+  nav ul{display:flex;gap:26px;list-style:none;font-size:12px;letter-spacing:.18em;color:var(--ink-soft);}
+  nav a{transition:color .2s;}
+  nav a:hover{color:var(--ink);}
+  .menu-btn{display:none;background:none;border:none;font-size:22px;color:var(--ink);cursor:pointer;}
+
+  /* hero */
+  .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;}
+  .hero-left{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 30px;}
+  .hero-left .logo{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,7vw,82px);letter-spacing:.34em;padding-left:.34em;font-weight:400;line-height:1;}
+  .hero-left .tag{font-family:"Cormorant Garamond",serif;font-size:14px;letter-spacing:.5em;color:var(--accent);margin-top:22px;padding-left:.5em;}
+  .hero-left .loc{margin-top:40px;font-size:12px;letter-spacing:.28em;color:var(--ink-soft);}
+  .hero-right{background:url('cover.jpg') center/cover no-repeat;min-height:60vh;}
+
+  /* concept */
+  .concept{padding:130px 0;text-align:center;background:var(--bg);}
+  .concept .en-label{display:block;margin-bottom:46px;}
+  .concept p{font-family:"Shippori Mincho",serif;font-weight:400;font-size:clamp(16px,2.4vw,21px);line-height:2.6;color:var(--ink);letter-spacing:.1em;}
+  .concept .en{font-family:"Cormorant Garamond",serif;font-style:italic;letter-spacing:.16em;color:var(--ink-soft);}
+
+  /* section heads */
+  .sec{padding:100px 0;}
+  .sec-head{text-align:center;margin-bottom:64px;}
+  .sec-head .en-label{display:block;margin-bottom:16px;}
+  .sec-head h2{font-family:"Shippori Mincho",serif;font-weight:400;font-size:clamp(22px,3.4vw,30px);letter-spacing:.18em;}
+  .sec-head p{font-size:14px;color:var(--ink-soft);margin-top:18px;letter-spacing:.08em;}
+
+  /* collection */
+  .collection{background:var(--bg);}
+  .item{display:grid;grid-template-columns:1.15fr 1fr;gap:60px;align-items:center;padding:54px 0;border-top:1px solid var(--line);}
+  .item:first-of-type{border-top:none;}
+  .item .photo{background:var(--bg-2);}
+  .item .photo img{width:100%;object-fit:contain;}
+  .item .cat{font-size:11px;letter-spacing:.32em;color:var(--accent);text-transform:uppercase;margin-bottom:18px;}
+  .item h3{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:30px;letter-spacing:.06em;line-height:1.25;}
+  .item .no{font-family:"Cormorant Garamond",serif;font-size:14px;letter-spacing:.18em;color:var(--ink-soft);margin-bottom:6px;}
+  .item .price{margin:22px 0;font-size:13px;letter-spacing:.06em;color:var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;}
+  .item .price .row{display:flex;justify-content:space-between;padding:3px 0;}
+  .item .price .lbl{font-family:"Cormorant Garamond",serif;letter-spacing:.14em;color:var(--ink-soft);text-transform:capitalize;}
+  .item .desc{font-size:13.5px;line-height:2.05;color:#5f5c55;}
+  .item:nth-child(even) .photo{order:2;}
+
+  /* price intro */
+  .price-sec{background:var(--bg-2);}
+  .price-cards{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:860px;margin:0 auto;}
+  .price-card{background:var(--white);border:1px solid var(--line);padding:48px 40px;text-align:center;}
+  .price-card .en-label{display:block;margin-bottom:14px;}
+  .price-card h3{font-family:"Shippori Mincho",serif;font-weight:400;font-size:21px;letter-spacing:.1em;margin-bottom:18px;}
+  .price-card p{font-size:13.5px;color:#5f5c55;line-height:2.1;}
+
+  /* order flow */
+  .flow{max-width:760px;margin:0 auto;}
+  .flow .step{display:grid;grid-template-columns:64px 1fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--line);}
+  .flow .step:last-child{border-bottom:none;}
+  .flow .num{font-family:"Cormorant Garamond",serif;font-size:38px;color:var(--accent);line-height:1;}
+  .flow .step h4{font-family:"Shippori Mincho",serif;font-weight:500;font-size:16px;letter-spacing:.08em;margin-bottom:8px;}
+  .flow .step p{font-size:13.5px;color:#5f5c55;line-height:1.95;}
+
+  /* quality */
+  .quality{background:var(--bg-2);text-align:center;}
+  .quality .inner{max-width:680px;margin:0 auto;}
+  .quality p{font-size:14.5px;color:#5f5c55;line-height:2.2;}
+  .quality .mark{font-family:"Cormorant Garamond",serif;font-size:15px;letter-spacing:.3em;color:var(--accent);margin-top:34px;}
+
+  /* faq */
+  .faq{max-width:780px;margin:0 auto;}
+  .faq details{border-bottom:1px solid var(--line);padding:6px 0;}
+  .faq summary{cursor:pointer;list-style:none;padding:22px 36px 22px 8px;position:relative;font-size:15px;letter-spacing:.05em;font-weight:400;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"＋";position:absolute;right:8px;top:50%;transform:translateY(-50%);color:var(--accent);font-weight:300;transition:transform .25s;}
+  .faq details[open] summary::after{content:"−";}
+  .faq .ans{padding:0 8px 24px;font-size:13.5px;color:#5f5c55;line-height:2.05;}
+
+  /* about */
+  .about{background:var(--bg);}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+  .about-text .en-label{display:block;margin-bottom:18px;}
+  .about-text h2{font-family:"Shippori Mincho",serif;font-weight:400;font-size:25px;letter-spacing:.12em;margin-bottom:26px;line-height:1.7;}
+  .about-text p{font-size:13.5px;color:#5f5c55;line-height:2.15;margin-bottom:18px;}
+  .about-photo img{width:100%;object-fit:cover;}
+
+  /* contact */
+  .contact{background:var(--bg-2);}
+  .contact .sec-head p{max-width:560px;margin-left:auto;margin-right:auto;}
+  form{max-width:620px;margin:0 auto;}
+  .field{margin-bottom:24px;}
+  .field label{display:block;font-size:12px;letter-spacing:.14em;color:var(--ink-soft);margin-bottom:8px;}
+  .field input,.field select,.field textarea{
+    width:100%;padding:13px 16px;border:1px solid var(--line);background:var(--white);
+    font-family:inherit;font-size:14px;color:var(--ink);font-weight:300;
+  }
+  .field textarea{min-height:130px;resize:vertical;}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .submit{text-align:center;margin-top:14px;}
+  .btn{display:inline-block;padding:15px 56px;background:var(--ink);color:var(--bg);border:none;cursor:pointer;
+    font-family:"Cormorant Garamond",serif;font-size:15px;letter-spacing:.28em;transition:opacity .25s;}
+  .btn:hover{opacity:.82;}
+  .contact-alt{text-align:center;margin-top:46px;font-size:13px;color:var(--ink-soft);letter-spacing:.1em;line-height:2.2;}
+  .contact-alt a{color:var(--ink);border-bottom:1px solid var(--line);padding-bottom:2px;}
+
+  /* footer */
+  footer{background:var(--ink);color:#cfcabf;text-align:center;padding:64px 24px 40px;}
+  footer .logo{font-family:"Cormorant Garamond",serif;font-size:30px;letter-spacing:.4em;padding-left:.4em;color:#fff;margin-bottom:20px;}
+  footer .info{font-size:12px;letter-spacing:.12em;line-height:2.1;}
+  footer .copy{font-family:"Cormorant Garamond",serif;font-size:11px;letter-spacing:.2em;color:#8d887d;margin-top:28px;}
+
+  @media(max-width:860px){
+    nav ul{display:none;}
+    .hero{grid-template-columns:1fr;}
+    .hero-right{order:-1;min-height:56vh;}
+    .item{grid-template-columns:1fr;gap:26px;}
+    .item:nth-child(even) .photo{order:0;}
+    .price-cards{grid-template-columns:1fr;}
+    .about-grid{grid-template-columns:1fr;gap:34px;}
+    .two{grid-template-columns:1fr;}
+    .sec{padding:74px 0;}
+    .concept{padding:90px 0;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">mavie</div>
+  <nav>
+    <ul>
+      <li><a href="#concept">CONCEPT</a></li>
+      <li><a href="#collection">COLLECTION</a></li>
+      <li><a href="#price">PRICE</a></li>
+      <li><a href="#order">ORDER</a></li>
+      <li><a href="#quality">QUALITY</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-left">
+    <div class="logo">mavie</div>
+    <div class="tag">RESONATE WITH</div>
+    <div class="loc">WEDDING DRESS ／ 滋賀県大津市</div>
+  </div>
+  <div class="hero-right" role="img" aria-label="mavie wedding dress"></div>
+</section>
+
+<!-- CONCEPT -->
+<section class="concept" id="concept">
+  <div class="wrap">
+    <span class="en-label">Concept</span>
+    <p>
+      あなたの持っている美しさや可愛らしさに、そっと光をあてる。<br>
+      まだ気付いていない魅力を、自然に引き出す。<br><br>
+      あなたのための <span class="en">Wedding dress</span>。
+    </p>
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="sec collection" id="collection">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-label">Collection</span>
+      <h2>制作実績</h2>
+      <p>ベースドレスに重ねるアレンジで、あなただけの一着へ。<br>すべてレンタル・セミオーダーでお仕立ていたします。</p>
+    </div>
+
+    <!-- 01 -->
+    <article class="item">
+      <div class="photo"><img src="p03.jpg" alt="Base Camisole dress no.017"></div>
+      <div class="info">
+        <div class="cat">Base Dress</div>
+        <div class="no">no.017</div>
+        <h3>Base Camisole dress</h3>
+        <div class="price">
+          <div class="row"><span class="lbl">rental</span><span>¥100,000 + tax</span></div>
+          <div class="row"><span class="lbl">semi-order</span><span>¥150,000 + tax</span></div>
+        </div>
+        <p class="desc">mavieのアレンジスタイルの土台となる、シンプルなキャミソールワンピース。体のラインにそっと寄り添い、美しいシルエットを引き立てます。飾らずとも完成された一着は、重ねる楽しみと“私らしさ”を支えるベースになります。</p>
+      </div>
+    </article>
+
+    <!-- 02 -->
+    <article class="item">
+      <div class="photo"><img src="p04.jpg" alt="Decorative frills no.004"></div>
+      <div class="info">
+        <div class="cat">Arrange</div>
+        <div class="no">no.017 + no.004</div>
+        <h3>Decorative frills</h3>
+        <div class="price">
+          <div class="row"><span class="lbl">rental</span><span>¥40,000 + tax</span></div>
+          <div class="row"><span class="lbl">semi-order</span><span>¥60,000〜 + tax</span></div>
+        </div>
+        <p class="desc">シンプルなベースのキャミソールドレスに、デコラティブなフリル飾りを合わせたコーディネート。シンプルが好きだけど、個性や華やかさも欲しい方におすすめです。</p>
+      </div>
+    </article>
+
+    <!-- 03 -->
+    <article class="item">
+      <div class="photo"><img src="p05.jpg" alt="murmure no.018"></div>
+      <div class="info">
+        <div class="cat">Arrange</div>
+        <div class="no">no.017 + no.018</div>
+        <h3>murmure</h3>
+        <div class="price">
+          <div class="row"><span class="lbl">rental</span><span>¥90,000 + tax</span></div>
+          <div class="row"><span class="lbl">semi-order</span><span>¥135,000〜 + tax</span></div>
+        </div>
+        <p class="desc">murmure（ミュルミュール）とはフランス語で“ささやき”という意味。レースの透け感、静かな美しさを表現しました。優しさ、柔らかさ、自然体の私らしさ。華美でなくとも、心に残るそんな一着です。レースは裾までのフルレングスでのオーダーも可能。</p>
+      </div>
+    </article>
+
+    <!-- 04 -->
+    <article class="item">
+      <div class="photo"><img src="p06.jpg" alt="Nuage tulle overdress no.005"></div>
+      <div class="info">
+        <div class="cat">Arrange</div>
+        <div class="no">no.017 + no.005</div>
+        <h3>Nuage tulle overdress</h3>
+        <div class="price">
+          <div class="row"><span class="lbl">rental</span><span>¥80,000 + tax</span></div>
+          <div class="row"><span class="lbl">semi-order</span><span>¥120,000〜 + tax</span></div>
+        </div>
+        <p class="desc">nuage（ニュアージュ）とは、フランス語で“雲”という意味。軽やかでふんわりとしたチュール素材の質感を表現しました。胸元を埋め尽くすギャザーフリルが、可憐で甘やかな印象。ベースキャミソールドレスにふんわりと重ねることで、ドレス全体にニュアンスのある奥行きが生まれます。semi-orderでカラードレスとしての製作もおすすめ。</p>
+      </div>
+    </article>
+
+    <!-- 05 -->
+    <article class="item">
+      <div class="photo"><img src="p07.jpg" alt="Éclat Blouse no.012"></div>
+      <div class="info">
+        <div class="cat">Arrange</div>
+        <div class="no">no.017 + no.012</div>
+        <h3>Éclat Blouse</h3>
+        <div class="price">
+          <div class="row"><span class="lbl">rental</span><span>¥70,000 + tax</span></div>
+          <div class="row"><span class="lbl">semi-order</span><span>¥105,000 + tax</span></div>
+        </div>
+        <p class="desc">Éclat（エクラ）は、フランス語で“輝き”を意味する言葉。柔らかく流れるソフトサテンの質感と、しなやかに揺れる長袖のブラウス。手元に視線が集まるよう袖口は斜めにカットされ、結婚指輪が最も美しく映えるよう設計されています。指輪が主役になる瞬間を、そっと引き立ててくれる一着。</p>
+      </div>
+    </article>
+
+    <!-- 06 -->
+    <article class="item">
+      <div class="photo"><img src="p08.jpg" alt="Plume tops no.011"></div>
+      <div class="info">
+        <div class="cat">Arrange</div>
+        <div class="no">no.017 + no.011</div>
+        <h3>Plume tops</h3>
+        <div class="price">
+          <div class="row"><span class="lbl">rental</span><span>¥70,000 + tax</span></div>
+          <div class="row"><span class="lbl">semi-order</span><span>¥105,000〜 + tax</span></div>
+        </div>
+        <p class="desc">Plume（プリュム）はフランス語で“羽”を意味する言葉。パワーショルダーの構築的なフォルムが、まるで羽のように印象的。個性的なビッグ袖は、胸元や背中の肌見せと絶妙なバランスでデザインされています。スレンダースカートと合わせれば、オシャレで凛とした印象に。着る人の魅力を引き立て、自由に表現できる、大人のための一着です。</p>
+      </div>
+    </article>
+
+    <!-- 07 -->
+    <article class="item">
+      <div class="photo"><img src="p09.jpg" alt="Waist frill tops no.006 / I-line skirt no.016"></div>
+      <div class="info">
+        <div class="cat">Separate</div>
+        <div class="no">no.006 + no.016</div>
+        <h3>Waist frill tops<br>& I-line skirt</h3>
+        <div class="price">
+          <div class="row"><span class="lbl">tops / rental</span><span>¥60,000 + tax</span></div>
+          <div class="row"><span class="lbl">tops / semi-order</span><span>¥90,000〜 + tax</span></div>
+          <div class="row"><span class="lbl">skirt / rental</span><span>¥80,000 + tax</span></div>
+          <div class="row"><span class="lbl">skirt / semi-order</span><span>¥120,000〜 + tax</span></div>
+        </div>
+        <p class="desc">ウエストに大胆にあしらわれたフリルが目を引く、セパレートタイプのトップス。Iラインスカートと組み合わせることで、スタイルアップと個性のある甘さが叶います。どこか懐かしさを感じるレトロなディテールと、今っぽさのバランスが魅力的。スカートはスリットを入れ、お気に入りのシューズをチラ見せするアレンジもおすすめです。</p>
+      </div>
+    </article>
+
+    <!-- 08 -->
+    <article class="item">
+      <div class="photo"><img src="p10.jpg" alt="Back charm dress no.003"></div>
+      <div class="info">
+        <div class="cat">Dress</div>
+        <div class="no">no.003</div>
+        <h3>Back charm dress</h3>
+        <div class="price">
+          <div class="row"><span class="lbl">rental</span><span>¥160,000 + tax</span></div>
+          <div class="row"><span class="lbl">semi-order</span><span>¥240,000〜 + tax</span></div>
+        </div>
+        <p class="desc">ふんわりと広がるシルエットに、背中で魅せる大人の抜け感。シンプルなビスチェに、素材の上質さと“背中リボン”が映えるドレスです。こちらのブラックドレスはボーダー柄がポイント。semi-orderでは、ジャガード素材やプリントなど、お好きな素材に置き換えての製作が可能です。</p>
+      </div>
+    </article>
+
+    <!-- 09 -->
+    <article class="item">
+      <div class="photo"><img src="p11.jpg" alt="Back drape tops & skirt no.025&026"></div>
+      <div class="info">
+        <div class="cat">Separate</div>
+        <div class="no">no.025 & 026</div>
+        <h3>Back drape<br>tops & skirt</h3>
+        <div class="price">
+          <div class="row"><span class="lbl">rental</span><span>¥100,000 + tax</span></div>
+          <div class="row"><span class="lbl">semi-order</span><span>¥170,000〜 + tax</span></div>
+        </div>
+        <p class="desc">シンプルなセパレートstyleに、背中で魅せる大人の抜け感。ワンピースタイプよりもアパレルライクな着こなしができるので、フリル飾りや大ぶりなイヤリングなど、自分らしい着こなしが選べる一着です。</p>
+      </div>
+    </article>
+
+    <!-- 10 -->
+    <article class="item">
+      <div class="photo"><img src="p12.jpg" alt="Lueur dress no.021"></div>
+      <div class="info">
+        <div class="cat">Dress</div>
+        <div class="no">no.021</div>
+        <h3>Lueur dress</h3>
+        <div class="price">
+          <div class="row"><span class="lbl">rental</span><span>¥160,000 + tax</span></div>
+          <div class="row"><span class="lbl">semi-order</span><span>¥240,000〜 + tax</span></div>
+        </div>
+        <p class="desc">しなやかで上質な光沢のイタリア製タフタを纏えるdress。Lueur（リュール）とはフランス語で、やわらかな光・ほのかな輝きという意味です。大きなバルーンスリーブや三段スカートなど少し個性的なデザインが、着る人の可愛さを引き出してくれます。胸元や背中はVラインですっきりと、スタイルアップも叶えます。</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="sec price-sec" id="price">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-label">Price</span>
+      <h2>料金について</h2>
+      <p>すべてのアイテムは「レンタル」と「セミオーダー」からお選びいただけます。</p>
+    </div>
+    <div class="price-cards">
+      <div class="price-card">
+        <span class="en-label">Rental</span>
+        <h3>レンタル</h3>
+        <p>既存のサンプルドレスをご試着のうえ、サイズ調整をしてお貸出しいたします。気軽に mavie の世界観を楽しみたい方へ。表示価格はすべて税抜です。</p>
+      </div>
+      <div class="price-card">
+        <span class="en-label">Semi-order</span>
+        <h3>セミオーダー</h3>
+        <p>素材・カラー・丈・デザインの一部を、おひとりおひとりのご要望に合わせてお仕立て。世界に一着、“私らしい”ドレスを叶えたい方へ。納期はご相談ください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section class="sec" id="order">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-label">Order</span>
+      <h2>ご注文の流れ</h2>
+      <p>はじめての方も、どうぞ肩の力を抜いて。<br>InstagramやWebからのご相談を承っております。</p>
+    </div>
+    <div class="flow">
+      <div class="step"><div class="num">01</div><div><h4>お問い合わせ・ご相談</h4><p>Instagram のメッセージ、または本ページのお問い合わせフォームよりご連絡ください。オンラインでのご相談も承っております。</p></div></div>
+      <div class="step"><div class="num">02</div><div><h4>カウンセリング・ご試着</h4><p>挙式スタイルやお好みの雰囲気、なりたいイメージを丁寧にお伺いします。実際にドレスをご試着いただきながら、一着をご一緒にお選びします。</p></div></div>
+      <div class="step"><div class="num">03</div><div><h4>お見積り・ご契約</h4><p>レンタルかセミオーダーかをお選びいただき、仕様とお見積りをご確認のうえご契約。セミオーダーは素材・カラー・丈などの仕様を決定します。</p></div></div>
+      <div class="step"><div class="num">04</div><div><h4>製作・お打ち合わせ</h4><p>採寸とサイズ調整を行います。セミオーダーは仕様設計に沿って一点ずつお仕立て。企画から製造管理まで一貫して管理いたします。</p></div></div>
+      <div class="step"><div class="num">05</div><div><h4>検品・品質確認</h4><p>納品前に検針機による安全確認を行い、針や金属片の混入がないことを確認します。安心してお召しいただける状態でお渡しします。</p></div></div>
+      <div class="step"><div class="num">06</div><div><h4>お引き渡し</h4><p>ご指定の日程に合わせてお引き渡し。特別な一日を、mavie のドレスとともにお迎えください。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUALITY -->
+<section class="sec quality" id="quality">
+  <div class="wrap inner">
+    <div class="sec-head">
+      <span class="en-label">Quality</span>
+      <h2>品質管理について</h2>
+    </div>
+    <p>ウェディングドレスは、花嫁が人生の特別な一日に、長い時間身につける大切な一着です。mavie では、納品前のすべてのドレスを検針機で検査し、針や金属片の混入がないことを確認しています。デザイン、素材選定、パターン、縫製、検品、納品までを一貫して管理することで、安心してお召しいただける品質をお届けします。</p>
+    <div class="mark">SAFE & ASSURED ─ inspected before delivery</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo"><img src="cover.jpg" alt="mavie atelier"></div>
+      <div class="about-text">
+        <span class="en-label">About</span>
+        <h2>滋賀県大津市から、<br>あなたのための一着を。</h2>
+        <p>mavie（マヴィ）は、滋賀県大津市を拠点に、ウェディングドレスの企画・製造管理・販売を行うブランドです。</p>
+        <p>代表の中村は、TAKAMI BRIDAL をはじめ、長年にわたりウェディングドレスの商品企画・製造管理に携わってきました。デザイン、素材選定、パターン、縫製、検品、納品までの工程を熟知し、小さなアトリエでありながら、企画から納品まで一貫して品質を管理できることが mavie の強みです。</p>
+        <p>流行や価格だけでなく、あなたの価値観や雰囲気、内面までもドレスに映したい。そんな想いに寄り添いながら、花嫁おひとりおひとりのための一着をお仕立てします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-label">Contact</span>
+      <h2>ご予約・お問い合わせ</h2>
+      <p>ご試着・ご相談は無料です。下記フォーム、またはInstagram・メールよりお気軽にご連絡ください。オンライン相談も承っております。</p>
+    </div>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <div class="two">
+        <div class="field"><label>お名前</label><input type="text" name="name" required></div>
+        <div class="field"><label>メールアドレス</label><input type="email" name="email" required></div>
+      </div>
+      <div class="two">
+        <div class="field"><label>お電話番号</label><input type="tel" name="tel"></div>
+        <div class="field"><label>挙式・撮影予定日</label><input type="text" name="date" placeholder="例：2027年春頃／未定"></div>
+      </div>
+      <div class="field">
+        <label>ご希望の内容</label>
+        <select name="type">
+          <option>ご試着の予約</option>
+          <option>レンタルについて相談したい</option>
+          <option>セミオーダーについて相談したい</option>
+          <option>オンライン相談を希望</option>
+          <option>その他</option>
+        </select>
+      </div>
+      <div class="field"><label>メッセージ</label><textarea name="message" placeholder="気になっているドレス（no.〇〇）や、ご相談内容をお書きください。"></textarea></div>
+      <div class="submit"><button class="btn" type="submit">SEND</button></div>
+    </form>
+    <div class="contact-alt">
+      Instagram　<a href="https://www.instagram.com/" target="_blank" rel="noopener">@mavie</a><br>
+      Email　<a href="mailto:info@mavie-dress.com">info@mavie-dress.com</a><br>
+      滋賀県大津市におの浜
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">mavie</div>
+  <div class="info">
+    RESONATE WITH<br>
+    Wedding dress ／ 滋賀県大津市におの浜<br>
+    info@mavie-dress.com
+  </div>
+  <div class="copy">© 2026 mavie. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
